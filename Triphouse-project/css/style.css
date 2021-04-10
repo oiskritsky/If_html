@@ -52,7 +52,13 @@
 		/* Chrome 26+, Opera 23+, Firefox 39+ */
 			url("../fonts/roboto-v27-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
+*,
+*::before,
+::after {
+	box-sizing: inherit;
+	list-style-type: none;
+	text-decoration: none;
+}
 * {
 	margin: 0px auto;
 	padding: 0px;
@@ -63,6 +69,11 @@
 
 body {
 	max-width: 1440px;
+	font-family: "Roboto";
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.2;
+	font-weight: normal;
 }
 
 header {
@@ -176,39 +187,99 @@ footer p {
 	font-size: 14px;
 	line-height: 16px;
 }
+
 /* Start styles for Devices whith max-whdth 360px*/
+.footer-mobile {
+	margin: 0px auto;
+	padding: 0px;
+	width: 360px;
+	height: 203px;
+	left: 0px;
+	background: #10367c;
+}
 
-/* @media (max-width: 360px) {
-  .offer__wrapper {
-    padding: 0;
-  }
+.logo-mobile {
+	padding: 40px 131px;
+	align-items: center;
+}
 
-  .offer__title {
-    font-size: 28px;
-    line-height: 33px;
-    margin-top: 24px;
-    margin-right: 71px;
-    margin-bottom: 35px;
-    margin-left: 71px;
-  }
-  
-  .offer__underline {
-    width: 0;
-    height: 0;
-  }
-  
-  .items {
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .item-icon__text  {
-    margin-top: 19px;
-    text-align: center;
-    font-size: 15px;
-    line-height: 18px;
-    
-  }
-}  */
+.logo-mobile img {
+	width: 98px;
+	height: 23px;
+}
 
-/* End styles for Devices whith max-whdth 360px*/ ;
+.footer-mobile__items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0px 67px;
+}
+
+.footer-mobile__items li {
+	display: inline;
+	flex: 1;
+	margin-right: 7px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 18px;
+	text-decoration-line: underline;
+	color: #ffffff;
+}
+
+.copyright-block__mobile {
+	width: 219px;
+	height: 14px;
+	margin: 32px 70px;
+}
+
+.copyright-block__mobile p {
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	color: #ffffff;
+}
+@media screen and (max-width: 359px) {
+	div.footer {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 359px) {
+	div.footer-mobile {
+		display: none;
+	}
+}
+@media (max-width: 360px) {
+	.offer__wrapper {
+		padding: 0;
+	}
+
+	.offer__title {
+		font-size: 28px;
+		line-height: 33px;
+		margin-top: 24px;
+		margin-right: 71px;
+		margin-bottom: 35px;
+		margin-left: 71px;
+	}
+
+	.offer__underline {
+		width: 0;
+		height: 0;
+	}
+
+	.items {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.item-icon__text {
+		margin-top: 19px;
+		text-align: center;
+		font-size: 15px;
+		line-height: 18px;
+	}
+}
+
+/* End styles for Devices whith max-whdth 360px*/
