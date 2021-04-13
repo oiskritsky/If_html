@@ -1,70 +1,147 @@
 /* roboto-100 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-100.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-100.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-100.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-300 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-regular - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin */
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local(''),
-       url('../fonts/roboto-v27-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/roboto-v27-latin-900.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-v27-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+  list-style-type: none;
+  text-decoration: none;
+}
+* {
+  margin: 0px auto;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-
-* {
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  }
-
 body {
+  padding: 0px;
   max-width: 1440px;
-  max-height: 569px;
-  left: 0;
-  top: 900px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.header {
+  margin: 0px auto;
+  max-width: 1440px;
+  width: 100%;
+  position: fixed;
+  background: black;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 104px;
+  width: 205px;
+  height: 40px;
+}
+
+.header__nav {
+  margin-right: 104px;
+}
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 24px;
+}
+
+.header__item:nth-child(2n) {
+  margin-right: 48px;
+}
+
+.header__item:nth-child(3n) {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+}
+
+.header__item:last-child {
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+}
+
+.header__link {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.header__link:hover,
+.header__link:focus,
+.header__link:active {
+  opacity: 0.75;
+}
+
+.main {
+  background: grey;
 }
 
 .offer__wrapper {
@@ -89,7 +166,6 @@ body {
 }
 
 .items {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
   margin-top: 80px;
@@ -102,17 +178,139 @@ body {
 }
 
 .item__icon {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
 
-/* Start styles for Devices whith max-whdth 360px*/
+.footer {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1440px;
+  height: 569px;
+  top: 900px;
+  background: #10367c;
+}
 
-@media (max-width: 360px) {
+.footer_block {
+  display: flex;
+  padding: 119px 272px 64px 104px;
+}
+
+.footer__items {
+  margin-left: 0px;
+  align-content: space-between;
+  text-align: justify;
+}
+
+.footer__items:nth-child() {
+  align-content: center;
+  text-align: justify;
+}
+
+.footer__items:last-child {
+  margin-right: 0px;
+  align-content: flex-end;
+  text-align: justify;
+}
+
+footer h3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+footer li {
+  color: red;
+}
+
+footer p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: white;
+}
+
+.copyright_block {
+  width: 100%;
+  margin: 0px 1081px 120px 104px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* Start styles for Devices whith max-whdth 360px*/
+.footer-mobile {
+  margin: 0px 0px 10px 0px;
+  padding: 0px;
+  width: 361px;
+  height: 203px;
+  left: 0px;
+  background: #10367c;
+}
+
+.logo-mobile {
+  padding: 40px 131px;
+  align-items: center;
+}
+
+.logo-mobile img {
+  width: 98px;
+  height: 23px;
+}
+
+.footer-mobile__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0px auto;
+}
+
+.footer-mobile__items li {
+  display: inline;
+  flex: 1;
+  margin-right: 7px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.copyright-block__mobile {
+  width: 219px;
+  height: 14px;
+  margin: 32px 70px;
+}
+
+.copyright-block__mobile p {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+}
+@media screen and (max-width: 360px) {
+  div.footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 361px) {
+  div.footer-mobile {
+    display: none;
+  }
+}
+@media (max-width: 361px) {
   .offer__wrapper {
     padding: 0;
   }
@@ -125,24 +323,27 @@ body {
     margin-bottom: 35px;
     margin-left: 71px;
   }
-  
+
   .offer__underline {
     width: 0;
     height: 0;
   }
-  
+
   .items {
     flex-direction: column;
     justify-content: center;
   }
-  
-  .item-icon__text  {
+
+  .item {
+    margin-bottom: 48px;
+  }
+
+  .item-icon__text {
     margin-top: 19px;
     text-align: center;
     font-size: 15px;
     line-height: 18px;
-    
   }
-} 
+}
 
 /* End styles for Devices whith max-whdth 360px*/
