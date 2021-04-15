@@ -50,6 +50,7 @@
 
 body {
   margin: 0px auto;
+
   font-family: "Roboto";
   font-style: normal;
   font-size: 16px;
@@ -120,16 +121,18 @@ body {
 }
 
 .main {
+  box-sizing: border-box;
   max-width: 1440px;
+  height: 100vh;
+  min-height: 900px;
   background: url(/img/intro-bg.jpg) no-repeat;
   background-size: cover;
 }
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1232px;
-  max-height: 487px;
-  width: 1232px;
-  height: 487px;
   margin: 202px 104px 120px 104px;
 }
 
@@ -188,7 +191,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 104px;
+  margin: 120px auto 100px;
 }
 
 .offer__wrapper {
