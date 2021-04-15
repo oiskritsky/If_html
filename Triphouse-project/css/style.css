@@ -113,11 +113,11 @@ body {
   text-decoration: none;
 }
 
-.header__link:active {
-  border-bottom: solid 4px orange;
+.header__link:focus {
+  border-bottom: solid 5px #ab2524;
   border-radius: 3px;
-  border-width: 5px;
-  transition: border-bottom 0.2s;
+
+  transition: border-bottom 0.3s;
 }
 
 .main {
