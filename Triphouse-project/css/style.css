@@ -43,7 +43,7 @@
 
 * {
   margin: 0px auto;
-  box-sizing: border-box;
+
   list-style-type: none;
   text-decoration: none;
 }
@@ -123,8 +123,7 @@ body {
 .main {
   box-sizing: border-box;
   max-width: 1440px;
-  height: 100vh;
-  min-height: 900px;
+  min-height: 100vh;
   background: url(/img/intro-bg.jpg) no-repeat;
   background-size: cover;
 }
