@@ -350,14 +350,6 @@ footer p {
   text-align: center;
   color: #ffffff;
 }
-@media screen and (max-width: 360px) {
-  div.footer {
-    display: none;
-  }
-  main {
-    display: none;
-  }
-}
 
 @media screen and (min-width: 361px) {
   div.footer-mobile {
@@ -365,6 +357,14 @@ footer p {
   }
 }
 @media (max-width: 360px) {
+  div.footer {
+    display: none;
+  }
+
+  main {
+    display: none;
+  }
+
   .offer__wrapper {
     padding: 0;
   }
