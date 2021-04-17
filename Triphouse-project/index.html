@@ -11,52 +11,54 @@
 
   <body>
     <main class="main">
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="header__logo">
-            <a href="/" class="header__logo-link">
-              <img src="./img/svg/logo.svg" alt="TripHouse" class="header_logo-pic" />
-            </a>
+      <div class="main__wrapper">
+        <header class="header">
+          <div class="header__wrapper">
+            <div class="header__logo">
+              <a href="/" class="header__logo-link">
+                <img src="./img/svg/logo.svg" alt="TripHouse" class="header_logo-pic" />
+              </a>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link">Stays</a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">Attractions</a>
+                </li>
+                <li class="header__item">
+                  <a href="#"> </a>
+                </li>
+                <li class="header__item">
+                  <a href="#"> </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#" class="header__link">Stays</a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">Attractions</a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  <img src="./img/svg/Night/Night.svg" alt="night" />
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#">
-                  <img src="./img/svg/AccountCircle/AccountCircle.svg" alt="AcccountCircle" />
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
-      <div class="content">
-        <div class="content__title">
-          <p class="content-title__text">Discover stays to live, work or just relax</p>
-          <div class="content__sbar">
-            <ul class="sbar__lables">
-              <li class="sbar-lables__destination">Your destination or hotel name</li>
-              <li class="sbar-lables__date">Check-in — Check-out</li>
-            </ul>
+        </header>
+        <h1>
+          Discover stays <br />
+          to live, work or just relax
+        </h1>
+        <form action="">
+          <div class="sbar__first">
+            <p><label for="search">Your destination or hotel name</label></p>
+            <input id="search" type="text" name="search" placeholder="New-York" />
           </div>
-          <div class="sbar__input">
-            <input type="text" class="sbar-input__destination" placeholder="New-York" />
-            <input type="date" name="check-in" id="check-in" class="sbar__input" />
-            <input type="date" name="check-out" id="check-out" class="sbar__input" />
-            <input type="text" class="sbar__input" placeholder="Children - 0, Adult - 0" />
-            <input type="button" value="Search" class="sbar__button" />
+          <div class="sbar__second">
+            <p>
+              <label for="in">Check-in</label> -
+              <label for="out">Check-out</label>
+            </p>
+            <div>
+              <input type="date" id="in" />
+
+              <input type="date" id="out" />
+            </div>
           </div>
-        </div>
+          <button>Search</button>
+        </form>
         <div class="market__links">
           <p>
             <img src="./img/svg/google-play-ico.svg" alt="google play market" />
