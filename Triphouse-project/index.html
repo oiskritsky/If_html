@@ -15,9 +15,7 @@
         <header class="header">
           <div class="header__wrapper">
             <div class="header__logo">
-              <a href="/" class="header__logo-link">
-                <img src="./img/svg/logo.svg" alt="TripHouse" class="header_logo-pic" />
-              </a>
+              <a href="/" class="header__logo-link"> </a>
             </div>
             <nav class="header__nav">
               <ul class="header__list">
@@ -33,6 +31,9 @@
                 <li class="header__item">
                   <a href="#"> </a>
                 </li>
+                <li class="header__burger">
+                  <a href="#"></a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -41,7 +42,7 @@
           Discover stays <br />
           to live, work or just relax
         </h1>
-        <form action="">
+        <form action="" class="form__desktop">
           <div class="sbar__first">
             <p><label for="search">Your destination or hotel name</label></p>
             <input id="search" type="text" name="search" placeholder="New-York" />
@@ -58,6 +59,21 @@
             </div>
           </div>
           <button>Search</button>
+        </form>
+        <form action="" class="form__mobile">
+          <div class="form-mobile__destination">
+            <input type="text" placeholder="Your destination or hotel name" />
+          </div>
+          <div class="date__mobile">
+            <input type="date" name="Check-in_mob" id="in_mob" />
+            <input type="date" name="Check-out_mob" id="out_mob" />
+          </div>
+          <div class="form-mobile__child">
+            <input type="text" placeholder="Adults - Children - Rooms" />
+          </div>
+          <div class="button__mob">
+            <button>Search</button>
+          </div>
         </form>
         <div class="market__links">
           <p>
