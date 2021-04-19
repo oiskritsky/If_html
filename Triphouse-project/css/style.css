@@ -177,8 +177,10 @@ h1 {
 .form__desktop input {
   height: 65px;
   width: 100%;
-  border: 0px;
+  border: none;
   border-radius: 4px;
+  justify-content: flex-end;
+  outline: none;
 }
 
 .form__desktop .sbar__first {
@@ -186,16 +188,24 @@ h1 {
 }
 
 .form__desktop .sbar__second {
-  flex-grow: 2;
+  flex-grow: 1;
+}
+.form__desktop .sbar__third {
+  margin-top: 48px;
+  border-radius: 10px;
+  
 }
 
+.form__desktop .sbar__third > input:focus {
+  box-shadow: 0px 0px 0px 3px gold;
+}
 .form__desktop button {
-  flex-grow: 1;
+  flex-grow: 3;
   height: 65px;
   margin-top: 48px;
   background: blue;
   color: #fff;
-  border: 0px;
+  border: none;
   border-radius: 4px;
 }
 
