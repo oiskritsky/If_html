@@ -3,42 +3,54 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100;
-  src: local(""), url("../fonts/roboto-v27-latin-100.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-100.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-100.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-100.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-300 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: local(""), url("../fonts/roboto-v27-latin-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-300.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-300.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-regular - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-regular.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-500 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-500.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-700 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/roboto-v27-latin-700.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-700.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin */
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/roboto-v27-latin-900.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-900.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local(""), url("../fonts/roboto-v27-latin-900.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/roboto-v27-latin-900.woff")
+      format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 html {
@@ -98,6 +110,7 @@ body {
 .header__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .header__item {
@@ -161,9 +174,17 @@ h1 {
 }
 
 .form__desktop {
-  display: flex;
   margin: 0px 100px 120px 100px;
   margin-bottom: 120px;
+}
+.form-desktop__wrapper {
+  display: flex;
+}
+.form__desktop .input__lable {
+  display: flex;
+}
+.form__desktop .input__lable > p:nth-child(2) {
+  margin-left: 10rem;
 }
 
 .form__desktop p {
@@ -171,15 +192,20 @@ h1 {
   margin-bottom: 30px;
 }
 
+.form-desktop__wrapper {
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+}
 .form__desktop .sbar__second div {
   display: flex;
 }
+
 .form__desktop input {
   height: 65px;
   width: 100%;
   border: none;
   border-radius: 4px;
-  justify-content: flex-end;
   outline: none;
 }
 
@@ -191,9 +217,7 @@ h1 {
   flex-grow: 1;
 }
 .form__desktop .sbar__third {
-  margin-top: 48px;
   border-radius: 10px;
-  
 }
 
 .form__desktop .sbar__third > input:focus {
@@ -202,7 +226,7 @@ h1 {
 .form__desktop button {
   flex-grow: 3;
   height: 65px;
-  margin-top: 48px;
+
   background: blue;
   color: #fff;
   border: none;
