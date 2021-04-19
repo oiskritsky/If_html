@@ -1,200 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discover stays to live, work or just relax</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
 
-  <body>
-    <main class="main">
-      <div class="main__wrapper">
-        <header class="header">
-          <div class="header__wrapper">
-            <div class="header__logo">
-              <a href="/" class="header__logo-link"> </a>
-            </div>
-            <nav class="header__nav">
-              <ul class="header__list">
-                <li class="header__item">
-                  <a href="#" class="header__link">Stays</a>
-                </li>
-                <li class="header__item">
-                  <a href="#" class="header__link">Attractions</a>
-                </li>
-                <li class="header__item">
-                  <a href="#"> </a>
-                </li>
-                <li class="header__item">
-                  <a href="#"> </a>
-                </li>
-                <li class="header__burger">
-                  <a href="#"></a>
-                </li>
-              </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover stays to live, work or just relax</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <main class="main">
+    <div class="main__wrapper">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="/" class="header__logo-link"> </a>
           </div>
-        </header>
-        <h1>
-          Discover stays <br />
-          to live, work or just relax
-        </h1>
-        <form action="" class="form__desktop">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="#" class="header__link">Stays</a>
+              </li>
+              <li class="header__item">
+                <a href="#" class="header__link">Attractions</a>
+              </li>
+              <li class="header__item">
+                <a href="#"> </a>
+              </li>
+              <li class="header__item">
+                <a href="#"> </a>
+              </li>
+              <li class="header__burger">
+                <a href="#"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <h1>
+        Discover stays <br />
+        to live, work or just relax
+      </h1>
+      <form action="" class="form__desktop">
+        <div class="input__lable">
+          <label for="search">Your destination or hotel name</label></p>
+          <label for="in">Check-in</label> -
+          <label for="out">Check-out</label>
+        </div>
+        <section class="form-desktop__wrapper">
+
           <div class="sbar__first">
-            <p><label for="search">Your destination or hotel name</label></p>
             <input id="search" type="text" name="search" placeholder="New-York" />
           </div>
           <div class="sbar__second">
-            <p>
-              <label for="in">Check-in</label> -
-              <label for="out">Check-out</label>
-            </p>
+
             <div>
               <input type="date" id="in" />
               <input type="date" id="out" />
-              </div>
+            </div>
           </div>
           <div class="sbar__third">
             <input type="text" class="Children" placeholder="Adults - Children - Rooms" />
           </div>
-          
           <button>Search</button>
-        </form>
-        <form action="" class="form__mobile">
-          <div class="form-mobile__destination">
-            <input type="text" placeholder="Your destination or hotel name" />
+        </section>
+      </form>
+      <form action="" class="form__mobile">
+        <div class="form-mobile__destination">
+          <input type="text" placeholder="Your destination or hotel name" />
+        </div>
+        <div class="date__mobile">
+          <input type="date" name="Check-in_mob" id="in_mob" />
+          <input type="date" name="Check-out_mob" id="out_mob" />
+        </div>
+        <div class="form-mobile__child">
+          <input type="text" placeholder="Adults - Children - Rooms" />
+        </div>
+        <div class="button__mob">
+          <button>Search</button>
+        </div>
+      </form>
+      <div class="market__links">
+        <p>
+          <img src="./img/svg/google-play-ico.svg" alt="google play market" />
+        </p>
+        <p>
+          <img src="./img/svg/Appstore_ico.svg" alt="appStore" />
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <section class="offer">
+    <div class="offer__wrapper">
+      <h1 class="offer__title">What do we offer</h1>
+      <p class="offer__underline"></p>
+      <ul class="items">
+        <li class="item">
+          <div class="item__icon">
+            <img src="./img/svg/HeadsetMicOutlined 1.svg" alt="support" />
           </div>
-          <div class="date__mobile">
-            <input type="date" name="Check-in_mob" id="in_mob" />
-            <input type="date" name="Check-out_mob" id="out_mob" />
+          <p class="item-icon__text">Support 24/7</p>
+        </li>
+        <li class="item">
+          <div class="item__icon">
+            <img src="./img/svg/ForumOutlined 1.svg" alt="Communicate" />
           </div>
-          <div class="form-mobile__child">
-            <input type="text" placeholder="Adults - Children - Rooms" />
+          <p class="item-icon__text">Communicate directly</p>
+        </li>
+        <li class="item">
+          <div class="item__icon">
+            <img src="./img/svg/DevicesOutlined 1.svg" alt="book online" />
           </div>
-          <div class="button__mob">
-            <button>Search</button>
+          <p class="item-icon__text">Book online</p>
+        </li>
+        <li class="item">
+          <div class="item__icon">
+            <img src="./img/svg/ThumbUpAltOutlined 1.png" alt="review" />
           </div>
-        </form>
-        <div class="market__links">
-          <p>
-            <img src="./img/svg/google-play-ico.svg" alt="google play market" />
-          </p>
-          <p>
-            <img src="./img/svg/Appstore_ico.svg" alt="appStore" />
-          </p>
+          <p class="item-icon__text">Real quest review</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="footer">
+      <div class="footer_block">
+        <div class="footer__items">
+          <li>
+            <h3>About</h3>
+          </li>
+          <li>
+            <p>How Triphouse works</p>
+          </li>
+          <li>
+            <p>Careers</p>
+          </li>
+          <li>
+            <p>Privacy</p>
+          </li>
+          <li>
+            <p>Terms</p>
+          </li>
+        </div>
+        <div class="footer__items">
+          <li>
+            <h3>Property types</h3>
+          </li>
+          <li>
+            <p>Guest houses</p>
+          </li>
+          <li>
+            <p>Hotels</p>
+          </li>
+          <li>
+            <p>Apartments</p>
+          </li>
+          <li>
+            <p>Villas</p>
+          </li>
+          <li>
+            <p>Holiday homes</p>
+          </li>
+          <li>
+            <p>Hostels</p>
+          </li>
+        </div>
+        <div class="footer__items">
+          <li>
+            <h3>Support</h3>
+          </li>
+          <li>
+            <p>Contact Customer Service</p>
+          </li>
+          <li>
+            <p>FAQ</p>
+          </li>
         </div>
       </div>
-    </main>
-
-    <section class="offer">
-      <div class="offer__wrapper">
-        <h1 class="offer__title">What do we offer</h1>
-        <p class="offer__underline"></p>
-        <ul class="items">
-          <li class="item">
-            <div class="item__icon">
-              <img src="./img/svg/HeadsetMicOutlined 1.svg" alt="support" />
-            </div>
-            <p class="item-icon__text">Support 24/7</p>
-          </li>
-          <li class="item">
-            <div class="item__icon">
-              <img src="./img/svg/ForumOutlined 1.svg" alt="Communicate" />
-            </div>
-            <p class="item-icon__text">Communicate directly</p>
-          </li>
-          <li class="item">
-            <div class="item__icon">
-              <img src="./img/svg/DevicesOutlined 1.svg" alt="book online" />
-            </div>
-            <p class="item-icon__text">Book online</p>
-          </li>
-          <li class="item">
-            <div class="item__icon">
-              <img src="./img/svg/ThumbUpAltOutlined 1.png" alt="review" />
-            </div>
-            <p class="item-icon__text">Real quest review</p>
-          </li>
+      <div class="copyright_block">
+        <p>&copy; 2020 Triphouse, Inc. All rights reserved</p>
+      </div>
+    </div>
+    <div class="footer-mobile">
+      <div class="logo-mobile">
+        <img src="./img/svg/logo_vector_mobile-footer.svg" alt="logo" />
+      </div>
+      <div class="footer-mobile__items">
+        <ul>
+          <li>About</li>
+          <li>Property Types</li>
+          <li>Support</li>
         </ul>
       </div>
-    </section>
-    <footer>
-      <div class="footer">
-        <div class="footer_block">
-          <div class="footer__items">
-            <li>
-              <h3>About</h3>
-            </li>
-            <li>
-              <p>How Triphouse works</p>
-            </li>
-            <li>
-              <p>Careers</p>
-            </li>
-            <li>
-              <p>Privacy</p>
-            </li>
-            <li>
-              <p>Terms</p>
-            </li>
-          </div>
-          <div class="footer__items">
-            <li>
-              <h3>Property types</h3>
-            </li>
-            <li>
-              <p>Guest houses</p>
-            </li>
-            <li>
-              <p>Hotels</p>
-            </li>
-            <li>
-              <p>Apartments</p>
-            </li>
-            <li>
-              <p>Villas</p>
-            </li>
-            <li>
-              <p>Holiday homes</p>
-            </li>
-            <li>
-              <p>Hostels</p>
-            </li>
-          </div>
-          <div class="footer__items">
-            <li>
-              <h3>Support</h3>
-            </li>
-            <li>
-              <p>Contact Customer Service</p>
-            </li>
-            <li>
-              <p>FAQ</p>
-            </li>
-          </div>
-        </div>
-        <div class="copyright_block">
-          <p>&copy; 2020 Triphouse, Inc. All rights reserved</p>
-        </div>
+      <div class="copyright-block__mobile">
+        <p>&copy; 2020 Triphouse, Inc. All rights reserved</p>
       </div>
-      <div class="footer-mobile">
-        <div class="logo-mobile">
-          <img src="./img/svg/logo_vector_mobile-footer.svg" alt="logo" />
-        </div>
-        <div class="footer-mobile__items">
-          <ul>
-            <li>About</li>
-            <li>Property Types</li>
-            <li>Support</li>
-          </ul>
-        </div>
-        <div class="copyright-block__mobile">
-          <p>&copy; 2020 Triphouse, Inc. All rights reserved</p>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
