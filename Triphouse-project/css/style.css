@@ -179,6 +179,15 @@ h1 {
 .form__desktop .input__lable > p:nth-child(2) {
 	margin-left: 10rem;
 }
+.form-desktop__wrapper {
+	display: flex;
+}
+.form__desktop .input__lable {
+	display: flex;
+}
+.form__desktop .input__lable > p:nth-child(2) {
+	margin-left: 10rem;
+}
 
 .form__desktop p {
 	color: #fff;
@@ -219,7 +228,6 @@ h1 {
 .form__desktop button {
 	flex-grow: 3;
 	height: 65px;
-
 	background: blue;
 	color: #fff;
 	border: none;
