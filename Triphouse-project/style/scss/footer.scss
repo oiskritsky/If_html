@@ -1,4 +1,4 @@
-@import "../css/_variables.scss";
+@import "./variables";
 
 .footer {
 	max-width: 1440px;
@@ -71,7 +71,7 @@
 .logo-mobile {
 	width: 100px;
 	height: 20px;
-	background-image: url(../img/svg/logo_vector_mobile-footer.svg);
+	background-image: url(../../img/svg/logo_vector_mobile-footer.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin: 40px 0px;

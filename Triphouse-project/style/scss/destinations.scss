@@ -1,4 +1,4 @@
-@import "../css/_variables.scss";
+@import "./variables";
 
 .destinations {
 	margin: 0px auto;
@@ -55,7 +55,7 @@
 .destinations-list__wrapper::after {
 	content: "";
 	position: absolute;
-	background-image: url(../img/svg/arrow_down.svg);
+	background-image: url(../../img/svg/arrow_down.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	width: 40px;
@@ -108,7 +108,7 @@
 		li:nth-child(2)::after {
 			content: "";
 			position: absolute;
-			background-image: url(../img/svg/arrow.svg);
+			background-image: url(../../img/svg/arrow.svg);
 			background-repeat: no-repeat;
 			background-size: contain;
 			width: 28px;

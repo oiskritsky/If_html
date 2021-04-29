@@ -1,4 +1,4 @@
-@import "../css/_variables.scss";
+@import "./variables";
 
 .header {
 	margin: 0px auto;
@@ -17,7 +17,7 @@
 	margin-left: 104px;
 	width: 205px;
 	height: 40px;
-	background-image: url(../img/svg/logo.svg);
+	background-image: url(../../img/svg/logo.svg);
 	a {
 		display: block;
 		height: 100%;
@@ -32,7 +32,7 @@
 			margin-left: 48px;
 			width: 30px;
 			height: 30px;
-			background-image: url(../img/svg/day_mode.svg);
+			background-image: url(../../img/svg/day_mode.svg);
 		}
 	}
 }
@@ -52,7 +52,7 @@
 	width: 40px;
 	height: 40px;
 	margin-right: 0px;
-	background-image: url(../img/svg/profile.svg);
+	background-image: url(../../img/svg/profile.svg);
 }
 
 .header__item:nth-child(4):active,
@@ -61,7 +61,7 @@
 	width: 40px;
 	height: 40px;
 	margin-right: 0px;
-	background-image: url(../img/svg/profile_active.svg);
+	background-image: url(../../img/svg/profile_active.svg);
 }
 
 .header__link {
@@ -98,7 +98,7 @@
 	margin-left: 12px;
 	width: 24px;
 	height: 16px;
-	background-image: url(../img/svg/menu_mob.svg);
+	background-image: url(../../img/svg/menu_mob.svg);
 }
 
 @media (max-width: 800px) {
@@ -111,7 +111,7 @@
 		margin-left: 0px;
 		width: 122px;
 		height: 24px;
-		background-image: url(../img/svg/logo_vector_mob.svg);
+		background-image: url(../../img/svg/logo_vector_mob.svg);
 	}
 
 	.header__nav {
@@ -125,10 +125,10 @@
 				margin-right: 12px;
 				width: 16px;
 				height: 16px;
-				background-image: url(../img/svg/Night_mob.svg);
+				background-image: url(../../img/svg/Night_mob.svg);
 			}
 			li:nth-child(4) {
-				background-image: url(../img/svg/profile_mob.svg);
+				background-image: url(../../img/svg/profile_mob.svg);
 				width: 24px;
 				height: 24px;
 			}
@@ -147,7 +147,7 @@
 		width: 24px;
 		height: 24px;
 		margin-right: 0px;
-		background-image: url(../img/svg/profile_mob.svg);
+		background-image: url(../../img/svg/profile_mob.svg);
 	}
 
 	.header__burger {

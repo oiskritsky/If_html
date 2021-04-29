@@ -1,4 +1,4 @@
-@import "../css/_variables.scss";
+@import "./variables";
 
 .sign-up {
 	margin: 0px auto;
@@ -54,7 +54,7 @@
 .sign-up__wrapper::after {
 	content: "";
 	position: absolute;
-	background: url(../img/svg/close1.svg);
+	background: url(../../img/svg/close1.svg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -105,7 +105,7 @@
 	.sign-up__wrapper::before {
 		content: "";
 		position: absolute;
-		background: url(../img/svg/close1.svg);
+		background: url(../../img/svg/close1.svg);
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: contain;
