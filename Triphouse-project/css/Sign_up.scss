@@ -1,0 +1,123 @@
+@import "../css/_variables.scss";
+
+.sign-up {
+	margin: 0px auto;
+	max-width: 1440px;
+	padding: 0px 100px;
+}
+
+.sign-up__wrapper {
+	display: flex;
+	position: relative;
+	background-color: $BgColorMain;
+
+	div {
+		margin: 50px 0px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		p {
+			max-width: 100%;
+			margin-bottom: 20px;
+			font-family: $font-family;
+			font-style: $font-style;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 28px;
+			text-align: center;
+			color: $MainTextColor;
+		}
+		input {
+			max-width: 50%;
+			height: 48px;
+			border: 1px solid $BgButtons;
+			border-radius: 8px;
+			color: $BgButtons;
+		}
+	}
+	div {
+		a {
+			display: none;
+		}
+	}
+}
+
+.desktop-user__logo {
+	width: 86px;
+	height: 86px;
+	margin: 50px 24px;
+}
+.mobile-logo-ico__sign-up {
+	display: none;
+}
+
+.sign-up__wrapper::after {
+	content: "";
+	position: absolute;
+	background: url(../img/svg/close1.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	right: 24px;
+	top: 24px;
+}
+
+@media (max-width: 800px) {
+	.sign-up__wrapper {
+		max-width: 100%;
+		align-items: center;
+		justify-content: space-evenly;
+		padding: 24px 50px 16px;
+		input {
+			display: none;
+		}
+		div {
+			flex-direction: row;
+			align-items: center;
+			justify-content: space-between;
+			p {
+				margin: 40px 16px;
+				font-family: $font-family;
+				font-style: $font-style;
+				font-weight: $font-weight;
+				font-size: 12px;
+				line-height: 14px;
+				color: $MainTextColor;
+			}
+		}
+		div {
+			a {
+				display: block;
+				font-family: $font-family;
+				font-style: $font-style;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 16px;
+				color: $BgButtons;
+			}
+		}
+	}
+	.sign-up__wrapper::after {
+		display: none;
+	}
+	.sign-up__wrapper::before {
+		content: "";
+		position: absolute;
+		background: url(../img/svg/close1.svg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 16px;
+		height: 16px;
+		left: 17px;
+		top: 50%;
+	}
+	.mobile-logo-ico__sign-up {
+		display: block;
+	}
+	.desktop-user__logo {
+		display: none;
+	}
+}
