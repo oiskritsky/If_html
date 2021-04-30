@@ -1,0 +1,157 @@
+@import "./variables";
+
+.form__desktop {
+	margin: 0px 100px 120px 100px;
+	margin-bottom: 120px;
+}
+
+.form-desktop__wrapper {
+	display: flex;
+}
+
+.form__desktop {
+	p {
+		color: $White;
+		margin-bottom: 30px;
+	}
+	input {
+		height: 65px;
+		width: 100%;
+		border: none;
+		border-radius: 4px;
+		outline: none;
+	}
+	.input__lable {
+		display: flex;
+		p:nth-child(2) {
+			margin-left: 10rem;
+		}
+	}
+	.sbar__first {
+		flex-grow: 3;
+	}
+	.sbar__second {
+		flex-grow: 1;
+		div {
+			display: flex;
+		}
+	}
+	.sbar__third {
+		border-radius: 10px;
+		input:focus {
+			box-shadow: 0px 0px 0px 3px $NavUnderlineColor;
+		}
+	}
+	button {
+		flex-grow: 3;
+		height: 65px;
+		background: $BgButtons;
+		color: $White;
+		border: none;
+		border-radius: 4px;
+	}
+}
+
+.form-desktop__wrapper {
+	display: flex;
+	border: none;
+	border-radius: 4px;
+	background-color: $White;
+}
+
+.market__links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0px auto 120px;
+}
+
+@media (max-width: 800px) {
+	.form__desktop {
+		display: none;
+	}
+
+	.form__mobile {
+		margin: 0px 16px 30px 16px;
+		background-color: $NavUnderlineColor;
+	}
+
+	.form-mobile__destination {
+		padding: 8px;
+		input {
+			width: 100%;
+			height: 48px;
+			border: none;
+			border-radius: 5px;
+		}
+	}
+
+	.date__mobile {
+		display: flex;
+		height: 48px;
+		padding: 0px 8px 8px 8px;
+		input {
+			border-radius: 4px;
+			border: none;
+			flex: 1;
+		}
+		input:first-child {
+			margin-right: 8px;
+		}
+	}
+
+	.form-mobile__child {
+		padding: 0px 8px 8px 8px;
+		input {
+			width: 100%;
+			height: 48px;
+			border: none;
+			border-radius: 5px;
+		}
+	}
+
+	.button__mob {
+		padding: 0px 8px 8px 8px;
+		button {
+			width: 100%;
+			height: 48px;
+			border: none;
+			border-radius: 5px;
+			background: $BgButtons;
+			font-size: 19px;
+			font-weight: 500;
+			line-height: 23px;
+			color: $White;
+		}
+	}
+
+	div.footer {
+		display: none;
+	}
+
+	.offer__wrapper {
+		padding: 0;
+	}
+
+	.offer__title {
+		font-size: 28px;
+		line-height: 33px;
+		margin-top: 24px;
+	}
+
+	.offer__title::after {
+		display: none;
+	}
+
+	.items {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.item-icon__text {
+		margin-top: 19px;
+		text-align: center;
+		font-size: 15px;
+		line-height: 18px;
+	}
+}
