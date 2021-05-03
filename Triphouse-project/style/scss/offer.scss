@@ -49,3 +49,11 @@
 	align-items: center;
 	margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+	.offer__wrapper {
+		margin: 40px auto;
+		max-width: 1440px;
+		padding: 0px;
+	}
+}

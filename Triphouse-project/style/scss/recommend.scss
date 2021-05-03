@@ -64,14 +64,12 @@
 	.recommend__wrapper {
 		padding: 0px 16px;
 	}
-
 	.recommend__title {
 		padding-top: 40px;
 		padding-bottom: 30px;
 		font-size: 28px;
 		line-height: 33px;
 	}
-
 	.recommend__list {
 		li {
 			width: calc(50% - 16px);
@@ -94,11 +92,9 @@
 			display: none;
 		}
 	}
-
 	.recommend-list__wrapper {
 		padding-bottom: 40px;
 	}
-
 	.recommend__list::after {
 		width: 28px;
 		height: 28px;

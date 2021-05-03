@@ -70,12 +70,10 @@
 	.form__desktop {
 		display: none;
 	}
-
 	.form__mobile {
 		margin: 0px 16px 30px 16px;
 		background-color: $NavUnderlineColor;
 	}
-
 	.form-mobile__destination {
 		padding: 8px;
 		input {
@@ -85,7 +83,6 @@
 			border-radius: 5px;
 		}
 	}
-
 	.date__mobile {
 		display: flex;
 		height: 48px;
@@ -99,7 +96,6 @@
 			margin-right: 8px;
 		}
 	}
-
 	.form-mobile__child {
 		padding: 0px 8px 8px 8px;
 		input {
@@ -109,7 +105,6 @@
 			border-radius: 5px;
 		}
 	}
-
 	.button__mob {
 		padding: 0px 8px 8px 8px;
 		button {
@@ -124,30 +119,24 @@
 			color: $White;
 		}
 	}
-
 	div.footer {
 		display: none;
 	}
-
 	.offer__wrapper {
 		padding: 0;
 	}
-
 	.offer__title {
 		font-size: 28px;
 		line-height: 33px;
 		margin-top: 24px;
 	}
-
 	.offer__title::after {
 		display: none;
 	}
-
 	.items {
 		flex-direction: column;
 		justify-content: center;
 	}
-
 	.item-icon__text {
 		margin-top: 19px;
 		text-align: center;

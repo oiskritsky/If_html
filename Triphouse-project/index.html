@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Discover stays to live, work or just relax</title>
 		<link rel="stylesheet" href="./style/css/main.css" />
+		<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
 	</head>
 
 	<body>
@@ -153,14 +154,14 @@
 			<div class="destinations__wrapper">
 				<div class="destinations__title"><h2>The best destinations</h2></div>
 				<div class="destinations__buttons">
-					<input type="button" value="Regions" autofocus />
+					<input type="button" value="Regions" />
 					<input type="button" value="Cities" />
 					<input type="button" value="Places of interest" />
-					</div>
+				</div>
 				<div class="destinations-list__wrapper">
 					<ul class="destinations__list">
 						<li>
-							<img src="../Triphouse-project/img/svg/Maldives.svg" alt="Maldives" autofocus />
+							<img src="../Triphouse-project/img/svg/Maldives.svg" alt="Maldives" />
 							<a href="!#">Maldives</a>
 						</li>
 						<li>
@@ -177,18 +178,114 @@
 						</li>
 					</ul>
 				</div>
-				<dsection class="sign_up">
-					<div class="sign-up__wrapper">
-						<img class="desktop-user__logo" src="./img/svg/user_ico.svg" alt="User" />
-						<img class="mobile-logo-ico__sign-up" src="./img/svg/Sign_in_logo_mob.svg" alt="Sign_up_logo" />
-						<div>
-							<p>Sign up and get 20% off your first booking</p>
-							<input type="button" value="Sign Up" />
-						</div>
-						<div>
-							<a href="!#">Install</a>
+			</div>
+		</section>
+		<section class="review">
+			<div class="review__wrapper">
+				<div class="review__title"><h2>Guests reviews</h2></div>
+				<div class="row row-cols-1 row-cols-md-3 g-2 review-list">
+					<div class="col">
+						<div class="card h-100 review-item__wrapper">
+							<img src="./img/svg/review/rev1.svg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title d-flex">
+									<p>Bali Resort&SPA</p>
+									<img src="./img/svg/review/score.svg" alt="" />
+								</h5>
+								<h6 class="card-title d-flex">
+									<p>Bali, Indonesia</p>
+									<p>1324 reviews</p>
+								</h6>
+								<div class="card-body__user">
+									<div class="d-flex">
+										<img src="./img/svg/user_ico.svg" alt="" style="width: 50px" />
+										<ul>
+											<li>Hanna Ivanova</li>
+											<li>🇺🇦 Ukraine</li>
+										</ul>
+									</div>
+								</div>
+								<p class="card-text">
+									Great location, really pleasant and clean rooms, but the thing that makes this such a good place to
+									stay are the staff. All of the people are incredibly helpful and generous with their time and advice.
+								</p>
+							</div>
 						</div>
 					</div>
+					<div class="col d-md-none review__navigation">
+						<img class="rounded mx-auto" src="./img/svg/review/navigation_guests.svg" alt="" />
+					</div>
+					<div class="col d-none d-md-block">
+						<div class="card h-100">
+							<img src="./img/svg/review/rev2.svg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title d-flex">
+									<p>King Kong Hostel</p>
+									<img src="./img/svg/review/score.svg" alt="" />
+								</h5>
+								<h6 class="card-title d-flex">
+									<p>Rotterdam, Netherlands</p>
+									<p>2016 reviews</p>
+								</h6>
+								<div class="card-body__user">
+									<div class="d-flex">
+										<img src="./img/svg/user_ico.svg" alt="" style="width: 50px" />
+										<ul>
+											<li>Adam Smith</li>
+											<li>🇺🇸 USA</li>
+										</ul>
+									</div>
+								</div>
+								<p class="card-text">
+									I've been in this hostel for a month and here is the best hostel of all Excellent management of
+									excellent and ethical staff and bedrooms Bathrooms are always clean and excellent Most importantly,
+									those who work here are kind and good-natured.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col d-none d-md-block">
+						<div class="card h-100">
+							<img src="./img/svg/review/rev3.svg" class="card-img-top" alt="..." />
+							<div class="card-body">
+								<h5 class="card-title d-flex">
+									<p>Rokoko Hotel</p>
+									<img src="./img/svg/review/score.svg" alt="" />
+								</h5>
+								<h6 class="card-title d-flex">
+									<p>Ourika, Marocco</p>
+									<p>815 reviews</p>
+								</h6>
+								<div class="card-body__user">
+									<div class="d-flex">
+										<img src="./img/svg/user_ico.svg" alt="" style="width: 50px" />
+										<ul>
+											<li>Anika Messer</li>
+											<li>🇩🇪 Germany</li>
+										</ul>
+									</div>
+								</div>
+								<p class="card-text">
+									Efficient, friendly, professional, and appropriately attentive. Great hotel in a great location. Easy
+									access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at this
+									location during my next stay in Marocco.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sign_up">
+			<div class="sign-up__wrapper">
+				<img class="desktop-user__logo" src="./img/svg/user_ico.svg" alt="User" />
+				<img class="mobile-logo-ico__sign-up" src="./img/svg/Sign_in_logo_mob.svg" alt="Sign_up_logo" />
+				<div>
+					<p>Sign up and get 20% off your first booking</p>
+					<input type="button" value="Sign Up" />
+				</div>
+				<div>
+					<a href="!#">Install</a>
 				</div>
 			</div>
 		</section>
@@ -265,5 +362,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 	</body>
 </html>

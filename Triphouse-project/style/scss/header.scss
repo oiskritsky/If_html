@@ -9,7 +9,7 @@
 .header__wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-end;
+	align-items: center;
 	justify-content: space-between;
 }
 
@@ -106,7 +106,6 @@
 		margin: 0px 16px 50px;
 		padding-top: 12px;
 	}
-
 	.header__logo {
 		margin-left: 0px;
 		width: 122px;
@@ -117,7 +116,6 @@
 	.header__nav {
 		margin: 0px;
 	}
-
 	.header__list {
 		align-items: center;
 		ul {
@@ -140,7 +138,6 @@
 			display: none;
 		}
 	}
-
 	.header__item:nth-child(4):active,
 	.header__item:nth-child(4):hover {
 		display: block;
@@ -149,7 +146,6 @@
 		margin-right: 0px;
 		background-image: url(../../img/svg/profile_mob.svg);
 	}
-
 	.header__burger {
 		display: block;
 	}
