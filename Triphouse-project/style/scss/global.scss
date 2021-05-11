@@ -2,7 +2,7 @@
 
 html {
 	box-sizing: border-box;
-	list-style: none;
+	list-style-type: none;
 	text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ main {
 	}
 }
 
-h1 {
+.main__title {
 	color: $White;
 	font-size: 50px;
 	line-height: 60px;
@@ -40,13 +40,13 @@ h1 {
 
 @media (max-width: 800px) {
 	body {
-		min-width: 360px;
+		min-width: 500px;
 	}
 
 	.main__wrapper {
 		background-position-x: -600px;
 	}
-	h1 {
+	.main__title {
 		margin: 0px 12px 30px;
 		font-size: 30px;
 		line-height: 35px;

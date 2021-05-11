@@ -1,6 +1,6 @@
 @import "./variables";
 
-.sign-up {
+.sign_up {
 	margin: 0px auto;
 	max-width: 1440px;
 	padding: 0px 100px;
@@ -10,7 +10,6 @@
 	display: flex;
 	position: relative;
 	background-color: $BgColorMain;
-
 	div {
 		margin: 50px 0px;
 		display: flex;
@@ -47,6 +46,7 @@
 	height: 86px;
 	margin: 50px 24px;
 }
+
 .mobile-logo-ico__sign-up {
 	display: none;
 }
@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 800px) {
+	.sign_up {
+		padding: 0px;
+	}
 	.sign-up__wrapper {
 		max-width: 100%;
 		align-items: center;
@@ -82,20 +85,19 @@
 				font-family: $font-family;
 				font-style: $font-style;
 				font-weight: $font-weight;
-				font-size: 12px;
-				line-height: 14px;
+				font-size: 1.3rem;
+				line-height: 24px;
 				color: $MainTextColor;
 			}
-		}
-		div {
 			a {
 				display: block;
 				font-family: $font-family;
 				font-style: $font-style;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 16px;
+				font-weight: $font-weight;
+				font-size: 1.5rem;
+				line-height: 24px;
 				color: $BgButtons;
+				text-decoration: none;
 			}
 		}
 	}
