@@ -11282,7 +11282,7 @@ main .main__wrapper {
     display: none;
   }
 
-  .header__item:nth-child(4):active,
+  .header__item:nth-child(4),
 .header__item:nth-child(4):hover {
     display: block;
     width: 24px;
