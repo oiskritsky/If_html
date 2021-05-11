@@ -30,7 +30,7 @@ main {
 	}
 }
 
-h1 {
+.main__title {
 	color: $White;
 	font-size: 50px;
 	line-height: 60px;
@@ -46,7 +46,7 @@ h1 {
 	.main__wrapper {
 		background-position-x: -600px;
 	}
-	h1 {
+	.main__title {
 		margin: 0px 12px 30px;
 		font-size: 30px;
 		line-height: 35px;

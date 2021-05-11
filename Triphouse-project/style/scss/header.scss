@@ -71,6 +71,9 @@
 	color: $White;
 	text-decoration: none;
 	position: relative;
+	&:hover {
+		color: $White;
+	}
 }
 
 .header__link::after {

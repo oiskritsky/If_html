@@ -11118,7 +11118,7 @@ main .main__wrapper {
   background: url(../../img/background_main.svg) no-repeat;
 }
 
-h1, .h1 {
+.main__title {
   color: #ffffff;
   font-size: 50px;
   line-height: 60px;
@@ -11135,7 +11135,7 @@ h1, .h1 {
     background-position-x: -600px;
   }
 
-  h1, .h1 {
+  .main__title {
     margin: 0px 12px 30px;
     font-size: 30px;
     line-height: 35px;
@@ -11211,6 +11211,9 @@ h1, .h1 {
   color: #ffffff;
   text-decoration: none;
   position: relative;
+}
+.header__link:hover {
+  color: #ffffff;
 }
 
 .header__link::after {
@@ -11314,12 +11317,18 @@ h1, .h1 {
 }
 .form__desktop .input__lable {
   display: flex;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  color: #ffffff;
 }
-.form__desktop .input__lable p:nth-child(2) {
+.form__desktop .input__lable :nth-child(2) {
   margin-left: 10rem;
 }
 .form__desktop .sbar__first {
   flex-grow: 3;
+}
+.form__desktop .sbar__first input::placeholder {
+  padding-left: 24px;
 }
 .form__desktop .sbar__second {
   flex-grow: 1;

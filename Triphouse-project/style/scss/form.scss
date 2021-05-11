@@ -23,13 +23,20 @@
 	}
 	.input__lable {
 		display: flex;
-		p:nth-child(2) {
+		margin-left: 24px;
+		margin-bottom: 24px;
+		color: $White;
+		:nth-child(2) {
 			margin-left: 10rem;
 		}
 	}
 	.sbar__first {
 		flex-grow: 3;
+		input::placeholder {
+			padding-left: 24px;
+		}
 	}
+
 	.sbar__second {
 		flex-grow: 1;
 		div {
