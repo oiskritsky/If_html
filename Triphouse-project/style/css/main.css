@@ -11325,25 +11325,29 @@ main .main__wrapper {
   margin-left: 10rem;
 }
 .form__desktop .sbar__first {
-  flex-grow: 3;
+  flex: 2;
 }
 .form__desktop .sbar__first input::placeholder {
   padding-left: 24px;
 }
 .form__desktop .sbar__second {
-  flex-grow: 1;
+  flex: 0.5;
 }
 .form__desktop .sbar__second div {
   display: flex;
 }
 .form__desktop .sbar__third {
+  flex: 2;
   border-radius: 10px;
+}
+.form__desktop .sbar__third input::placeholder {
+  text-align: center;
 }
 .form__desktop .sbar__third input:focus {
   box-shadow: 0px 0px 0px 3px #f5bd41;
 }
 .form__desktop button {
-  flex-grow: 3;
+  flex: 1;
   height: 65px;
   background: #3077c6;
   color: #ffffff;
