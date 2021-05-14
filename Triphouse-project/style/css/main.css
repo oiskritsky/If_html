@@ -11618,6 +11618,9 @@ main .main__wrapper {
     margin: 0px 16px;
   }
 
+  .destinations__list {
+    padding: 0px;
+  }
   .destinations__list li {
     width: calc(50% - 16px);
   }
@@ -11719,6 +11722,9 @@ main .main__wrapper {
     line-height: 33px;
   }
 
+  .recommend__list {
+    padding: 0px;
+  }
   .recommend__list li {
     width: calc(50% - 16px);
   }
